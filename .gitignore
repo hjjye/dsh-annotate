@@ -1,10 +1,10 @@
-# 构建产物 / 运行时
-lib/
+# 构建产物（本插件 lib/ 已入库，无需排除；此为无构建链纯 JS 形态）
+
 node_modules/
 *.tsbuildinfo
 *.tgz
 
-# 本地注入清单（不要入库）
+# 本地注入运行时文件（不要入库）
 local-packages/
 .registry.json
 cordis.patch.yml
