@@ -1,0 +1,14 @@
+# 构建产物 / 运行时
+lib/
+node_modules/
+*.tsbuildinfo
+*.tgz
+
+# 本地注入清单（不要入库）
+local-packages/
+.registry.json
+cordis.patch.yml
+
+# 系统文件
+.DS_Store
+Thumbs.db

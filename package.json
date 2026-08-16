@@ -1,0 +1,21 @@
+{
+  "name": "@dsh-external/dsh-annotate",
+  "version": "0.1.0",
+  "description": "Codex 式行内批注：框选会话文字 → 添加到对话 → 输入批注 → 生成带编号的引用芯片插入主输入框，随消息一并发送。",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "README.md"],
+  "license": "BSD-3-Clause",
+  "dsh": {
+    "client": {
+      "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-ui-slots"],
+      "platform": "web"
+    }
+  }
+}
