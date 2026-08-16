@@ -1,6 +1,10 @@
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-0.1.1-8b5cf6" />
+  <a href="README.md"><b>中文</b></a> · <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
+  <img alt="version" src="https://img.shields.io/badge/version-0.1.2-8b5cf6" />
   <img alt="license" src="https://img.shields.io/badge/license-MIT-green" />
   <img alt="platform" src="https://img.shields.io/badge/platform-DSH-blue" />
   <img alt="status" src="https://img.shields.io/badge/status-stable-brightgreen" />
@@ -62,8 +66,9 @@ dev_uninject_plugin dsh-annotate  # 卸载
 
 ```
 dsh-annotate/
-├─ package.json     # 包元数据（exports . / ./client，files: lib/README/LICENSE/install.ps1）
-├─ README.md
+├─ package.json     # 包元数据（exports . / ./client，files: lib/README*/LICENSE/install.ps1）
+├─ README.md        # 中文
+├─ README.en.md     # English
 ├─ LICENSE          # MIT
 ├─ install.ps1      # 一键安装脚本（装配进 ~/.dsh/local-packages）
 └─ lib/

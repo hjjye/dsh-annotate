@@ -1,6 +1,6 @@
 {
   "name": "@dsh-external/dsh-annotate",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DSH 行内批注插件（Codex 风格）：框选会话文字 → 添加批注 → 主对话框玻璃气泡 + 原文追踪编辑 → 随消息发送。配合 dsh-super-injector 运行时注入，无需构建。",
   "private": true,
   "type": "module",
@@ -10,7 +10,7 @@
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
-  "files": ["lib", "README.md", "LICENSE", "install.ps1"],
+  "files": ["lib", "README.md", "README.en.md", "LICENSE", "install.ps1"],
   "license": "MIT",
   "keywords": ["dsh", "plugin", "annotation", "批注", "codex"],
   "repository": {
