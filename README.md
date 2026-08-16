@@ -1,4 +1,4 @@
-<img width="749" height="279" alt="屏幕截图 2026-08-16 221158" src="https://github.com/user-attachments/assets/e11ce559-bd0a-47d4-b3dc-d239c99d62f2" /># @dsh-external/dsh-annotate
+
 
 **DSH 行内批注插件**（Codex 风格）：在会话里框选一段文字 → 添加批注 → 批注作为独立气泡跟随消息发送，原文可随时追踪/编辑。
 
