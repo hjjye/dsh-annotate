@@ -1,4 +1,4 @@
-# @dsh-external/dsh-annotate
+<img width="749" height="279" alt="屏幕截图 2026-08-16 221158" src="https://github.com/user-attachments/assets/e11ce559-bd0a-47d4-b3dc-d239c99d62f2" /># @dsh-external/dsh-annotate
 
 **DSH 行内批注插件**（Codex 风格）：在会话里框选一段文字 → 添加批注 → 批注作为独立气泡跟随消息发送，原文可随时追踪/编辑。
 
@@ -6,11 +6,15 @@
 
 ## 功能
 
-- **框选即批注**：鼠标框选会话/代码中的文字 → 冒出「添加到对话」→ 输入批注（删除 / 取消 / 确定，回车=确认、Shift+回车=换行）。
+- **框选即批注**：鼠标框选会话/代码中的文字 → 冒出「添加到对话」→ 输入批注（删除 / 取消 / 确定，回车=确认、Shift+回车=换行）。<img width="749" height="279" alt="屏幕截图 2026-08-16 221158" src="https://github.com/user-attachments/assets/9c14afeb-7e23-4abb-81a5-badfc63a20db" />
+
 - **主对话框气泡**：输入框上方显示「N条批注」玻璃气泡，悬停弹出详情列表，每条右上角有 **✎ 编辑 / × 删除**。
+- <img width="465" height="258" alt="屏幕截图 2026-08-16 221329" src="https://github.com/user-attachments/assets/8f969db7-26b4-4c86-84b9-1f490728395b" />
+
 - **原文追踪**：每条批注在所选文本右上角有编号气泡；点击编辑会**先滚动追踪到原文**、套上选文背景高亮，再在原文旁打开编辑框。
 - **发送序列化**：发送时批注以 `/noteN` 编号 + 引用文本嵌入消息首部；发送消息里合并成「N条批注」玻璃气泡，悬停查看/定位。
 - **毛玻璃外观**：编辑框、详情气泡、发送/主对话框气泡统一采用半透明玻璃质感，任何皮肤下都清晰。
+<img width="713" height="365" alt="屏幕截图 2026-08-16 221600" src="https://github.com/user-attachments/assets/b445b08a-cfab-45d1-9247-d42abd440656" />
 
 ## 一键部署
 
