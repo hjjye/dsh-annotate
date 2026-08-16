@@ -59,8 +59,9 @@ dev_uninject_plugin dsh-annotate  # 卸载
 2. 用任意模块加载器 / 插件装配方式将其作为 `@dsh-external/dsh-annotate` 装载。
 
 
-### 方式 D: Agent自动部署 （最简单保险）
-直接复制仓库地址https://github.com/hjjye/dsh-annotate丢给deepseek harness或者其他Agent工具，让它帮你安装到deepseek harness。
+### 方式 D：Agent 自动部署（最简单保险）
+
+直接复制仓库地址 `https://github.com/hjjye/dsh-annotate` 丢给 DeepSeek Harness 或其他 Agent 工具，让它帮你安装到 DeepSeek Harness。
 
 ## 目录结构
 

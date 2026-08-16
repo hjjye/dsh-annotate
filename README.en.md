@@ -58,12 +58,16 @@ Every version is published on [Releases](https://github.com/hjjye/dsh-annotate/r
 1. Put the whole directory (including `package.json`, `lib/`) under DSH's `local-packages/`;
 2. Load it as `@dsh-external/dsh-annotate` with any module loader / plugin assembly method.
 
+### Option D: agent auto-install (easiest, safest)
+
+Just copy the repo URL `https://github.com/hjjye/dsh-annotate` and hand it to DeepSeek Harness or any other agent tool — let it install the plugin for you.
+
 ## Directory layout
 
 ```
 dsh-annotate/
 ├─ package.json     # package metadata (exports . / ./client, files: lib/README*/LICENSE/install.ps1)
-├─ README.md        # 中文
+├─ README.md        # Chinese
 ├─ README.en.md     # English
 ├─ LICENSE          # MIT
 ├─ install.ps1      # one-click install script (assembles into ~/.dsh/local-packages)
