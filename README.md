@@ -18,13 +18,18 @@
 
 ## 一键部署
 
-### 方式 A：DSH 注入器（推荐）
+### 方式 A：一键安装脚本（推荐）
 
-本插件设计为配合 [dsh-super-injector](https://github.com/hjjye/dsh-super-injector) 运行时注入，无需构建：
+```powershell
+git clone https://github.com/hjjye/dsh-annotate.git
+cd dsh-annotate
+.\install.ps1
+```
+
+脚本会把插件装配进 `~/.dsh/local-packages/dsh-annotate`，然后按提示在 DSH 会话里执行注入：
 
 ```bash
-# 在 DSH 会话内调用注入器工具
-dev_inject_plugin C:\path\to\dsh-annotate
+dev_inject_plugin C:\Users\<你>\\.dsh\\local-packages\\dsh-annotate
 ```
 
 注入后刷新页面即可。热重载 / 卸载：
@@ -34,7 +39,11 @@ dev_reload_package dsh-annotate   # 改代码后重载
 dev_uninject_plugin dsh-annotate  # 卸载
 ```
 
-### 方式 B：手动放置
+### 方式 B：GitHub Release 下载
+
+每个版本发布在 [Releases](https://github.com/hjjye/dsh-annotate/releases)（`v*` tag + `.tgz` 附件）。把 tgz 解压到 `~/.dsh/local-packages/dsh-annotate`，再按方式 A 的注入命令装配即可。
+
+### 方式 C：手动放置
 
 1. 把整个目录（含 `package.json`、`lib/`）放到 DSH 的 `local-packages/` 下；
 2. 用任意模块加载器 / 插件装配方式将其作为 `@dsh-external/dsh-annotate` 装载。
