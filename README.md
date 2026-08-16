@@ -1,4 +1,10 @@
 
+<p align="center">
+  <img alt="version" src="https://img.shields.io/badge/version-0.1.1-8b5cf6" />
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-green" />
+  <img alt="platform" src="https://img.shields.io/badge/platform-DSH-blue" />
+  <img alt="status" src="https://img.shields.io/badge/status-stable-brightgreen" />
+</p>
 
 **DSH 行内批注插件**（Codex 风格）：在会话里框选一段文字 → 添加批注 → 批注作为独立气泡跟随消息发送，原文可随时追踪/编辑。
 
@@ -52,8 +58,10 @@ dev_uninject_plugin dsh-annotate  # 卸载
 
 ```
 dsh-annotate/
-├─ package.json     # 包元数据（exports . / ./client）
+├─ package.json     # 包元数据（exports . / ./client，files: lib/README/LICENSE/install.ps1）
 ├─ README.md
+├─ LICENSE          # MIT
+├─ install.ps1      # 一键安装脚本（装配进 ~/.dsh/local-packages）
 └─ lib/
    ├─ index.js      # host 半区（占位入口）
    └─ client.js     # client 半区（全部 UI 与批注逻辑，__ModuleLoader__ 加载）

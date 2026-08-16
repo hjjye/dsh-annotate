@@ -1,7 +1,7 @@
 {
   "name": "@dsh-external/dsh-annotate",
-  "version": "0.1.0",
-  "description": "Codex 式行内批注：框选会话文字 → 添加到对话 → 输入批注 → 生成带编号的引用芯片插入主输入框，随消息一并发送。",
+  "version": "0.1.1",
+  "description": "DSH 行内批注插件（Codex 风格）：框选会话文字 → 添加批注 → 主对话框玻璃气泡 + 原文追踪编辑 → 随消息发送。配合 dsh-super-injector 运行时注入，无需构建。",
   "private": true,
   "type": "module",
   "main": "./lib/index.js",
@@ -10,8 +10,17 @@
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
-  "files": ["lib", "README.md"],
-  "license": "BSD-3-Clause",
+  "files": ["lib", "README.md", "LICENSE", "install.ps1"],
+  "license": "MIT",
+  "keywords": ["dsh", "plugin", "annotation", "批注", "codex"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hjjye/dsh-annotate.git"
+  },
+  "homepage": "https://github.com/hjjye/dsh-annotate",
+  "bugs": {
+    "url": "https://github.com/hjjye/dsh-annotate/issues"
+  },
   "dsh": {
     "client": {
       "inject": ["@deepseek-ai/dsh-client-runtime", "@deepseek-ai/dsh-client-ui-slots"],
