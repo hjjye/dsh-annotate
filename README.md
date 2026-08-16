@@ -54,6 +54,10 @@ dev_uninject_plugin dsh-annotate  # 卸载
 1. 把整个目录（含 `package.json`、`lib/`）放到 DSH 的 `local-packages/` 下；
 2. 用任意模块加载器 / 插件装配方式将其作为 `@dsh-external/dsh-annotate` 装载。
 
+
+### 方式 D: Agent自动部署 （最简单保险）
+直接复制仓库地址https://github.com/hjjye/dsh-annotate丢给deepseek harness或者其他Agent工具，让它帮你安装到deepseek harness。
+
 ## 目录结构
 
 ```
